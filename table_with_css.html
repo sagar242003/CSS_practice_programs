@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table with CSS</title>
+    <style>
+        td,th,tr{
+
+            /* background-color: aquamarine; */
+            font-size: large;
+            border: 1px solid black;  /*border: <measurment><border-type><border-color>   border- size style color*/
+            text-align: center;
+                /* text align left right and center  */
+
+            height: 50px;
+            width: 50px;
+
+            padding: 25px;
+            
+        }
+
+        /* alternate colour fot the rows nth child function is used  */
+
+        tbody tr:nth-child(odd){
+            background-color: red;
+        }
+        tbody tr:nth-child(even){
+            background-color: greenyellow;
+        }
+
+        table{
+            border-spacing: 1px;
+            /* border-collapse: collapse;  ==  border-spacing: 0px;*/
+            width: 50%;
+        }
+        th{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        
+        <tbody>
+            <thead>
+                <th>sr no</th>
+                <th>name</th>
+                <th>roll no</th>
+            </thead>
+
+            <tr>
+                <td>a</td>
+                <td>sagar</td>
+                <td>11</td>
+            </tr>
+
+            <tr>
+                <td>b</td>
+                <td>rohit</td>
+                <td>47</td>
+            </tr>
+
+            <tr>
+                <td>c</td>
+                <td>shantanu</td>
+                <td>61</td>
+            </tr>
+    </tbody>
+
+    </table>
+
+</body>
+
+</html>
